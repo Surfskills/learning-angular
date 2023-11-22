@@ -62,10 +62,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "inmest-web:build:production"
+              "browserTarget": "inmest-web:build:production"
+                
             },
             "development": {
-              "buildTarget": "inmest-web:build:development"
+              "browserTarget": "inmest-web:build:development"
             }
           },
           "defaultConfiguration": "development"
