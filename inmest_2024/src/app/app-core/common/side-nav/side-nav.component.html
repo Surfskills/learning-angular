@@ -8,14 +8,26 @@
             </a>
         </li>
         <li>
-            <i class="fa fa-calendar"></i>
-            Attendance</li>
+        
+            <a [routerLink]="['/attendance']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-calendar"></i>
+                Attendance
+            </a>
+        </li>
         <li>
-            <i class="fa fa-bed"></i>
-            Leave</li>
+            <a [routerLink]="['/leaves']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-bed"></i>
+                Leave
+            </a>
+        </li>
         <li>
-            <i class="fa fa-area-chart"></i>
-            Analytics</li>
+           
+            
+            <a [routerLink]="['/analytics']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
+                <i class="fa fa-area-chart"></i>
+                Analytics
+            </a>
+        </li>
         <li>
             <a [routerLink]="['/users']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}">
                 <i class="fa fa-users"></i>
