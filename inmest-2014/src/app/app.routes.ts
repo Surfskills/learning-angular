@@ -14,5 +14,6 @@ export const routes: Routes = [
     {path: 'my-classes', component: MyClassesComponent},
     {path: 'leaves', component: LeavesComponent},
     {path: 'leaves/:id/:name', component: LeaveDetailComponent},
-    {path: 'user-detail', component: UserDetailComponent}
+    {path: 'user-detail', component: UserDetailComponent},
+    { path: '', redirectTo: '/leaves', pathMatch: 'full' }, // Redirect to "Leaves" if no route is specified
 ];

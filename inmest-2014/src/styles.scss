@@ -243,3 +243,63 @@ li a:hover {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// The Leave details css
+.details-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f3efef;
+  }
+  
+  .details-section {
+    margin-top: 20px;
+  }
+  
+  .details-content {
+    display: flex;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #f3efef;
+  }
+  
+.return-button,
+.accept-button,
+.decline-button {
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+
+
+    
+    
+}
+
+.return-button {
+  background-color: #21999D;
+  color: white;
+  border-radius: 15px; /* Adjust the border-radius for rounded corners */
+ 
+
+}
+
+.accept-button {
+  background-color: #21999D; /* Green */
+  color: white;
+  border-radius: 15px; /* Adjust the border-radius for rounded corners */
+  display: flex;
+  margin-left: 200px;
+}
+
+.decline-button {
+  background-color: #D17285; /* Red */
+  color: white;
+  border-radius: 15px; /* Adjust the border-radius for rounded corners */
+  margin-right: 200px;
+}
