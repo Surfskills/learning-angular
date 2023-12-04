@@ -1,13 +1,14 @@
-<table class="table">
+<div class="table-container">
+  <div class="table shadow table-sm">
+    <table class="table">
   <thead>
       <th>Submitted By</th>
-      <th>Leave Type</th>
+      <th>Request Type</th>
       <th>Start Date</th>
       <th>End Date</th>
       <th>Status</th>
       <th>Status Changed By</th>
       <th>Date Created</th>
-      <th>Action</th>
   </thead>
   <tbody>
     <tr *ngFor="let leave of leaves;">
@@ -19,11 +20,13 @@
       <td>{{leave?.status_changed_by}}</td>
       <td>{{leave?.last_modified}}</td>
       <td>
-          <a class="btn btn-primary" [routerLink]="['/leaves', leave?.id, leave?.created_by]">
-              <i class="fa fa-eye"></i>
+          <a class="btn btn-primary" style="background-color: #21999D;" [routerLink]="['/leaves', leave?.id, leave?.created_by]">
+           View Details
           </a>
       </td>
     </tr>
   
   </tbody>
   </table>
+  </div>
+</div>

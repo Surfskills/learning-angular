@@ -1,15 +1,22 @@
-.sideNav{
-    background-color: rgb(237, 237, 237);
+
+.menu li {
+    display: flex; /* Add flex display */
+    align-items: center; /* Align items vertically */
     padding: 10px;
-    padding-right: 40px;
+    border-bottom: 1px solid #eee; /* Optional: Add a separator between items */
 }
 
-.sideNav .logo{
-    margin-bottom: 20px;
-    margin-left: 30px;
+.menu li svg {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+.menu li:hover {
+    background-color: #f5f5f5; /* Optional: Change background color on hover */
+}
+
+.menu-active {
+    background-color: #e0f7fa; /* Optional: Change background color for active item */
 }

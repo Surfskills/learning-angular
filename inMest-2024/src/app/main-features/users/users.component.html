@@ -1,4 +1,6 @@
-<table class="table table-bordered">
+<div class="table-container">
+  <div class="table shadow table-sm">
+   <table class="table table-bordered" >
     <thead>
       <tr>
         <th scope="col">Id</th>
@@ -6,7 +8,7 @@
         <th scope="col">Last name</th>
         <th scope="col">Email</th>
         <th scope="col">Cohort</th>
-        <th scope="col">Actions</th>
+        <th scope="col"></th>
       </tr>
     </thead>
   
@@ -18,20 +20,22 @@
         <td>{{ user.email }}</td>
         <td>{{ user.cohort }}</td>
         <td>
-          <button
-            (click)="viewUser(user)"
+          <button class=""
+            (click)="viewUser(user) "style="background-color: rgb(237, 99, 99); margin-left: 10px; border-radius: 10px;"
             [routerLink]="['/user-detail']"
             [queryParams]="{
               id: user.id,
               name: user.first_name,
-             
             }"
           >
             viewUser
           </button>
-          <button (click)="deleteUser(user)">Delete</button>
+          <button (click)="deleteUser(user)" style="background-color: rgb(237, 99, 99); margin-left: 10px; border-radius: 10px;">Delete</button>
         </td>
       </tr>
     </tbody>
   </table>
-  
+  </div>
+</div>
+
+

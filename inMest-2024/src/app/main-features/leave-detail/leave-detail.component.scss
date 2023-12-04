@@ -1,10 +1,12 @@
 // The Leave details css
 .details-container {
-    max-width: 800px;
     margin-bottom: 10px;
     margin-top: 15px;
     padding: 20px;
-    background-color: #f3efef;
+    background-color: #f9f4f4;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+
+    flex-direction: column;
   }
   
   .details-section {
@@ -19,6 +21,7 @@
     margin-left: 10px;
     margin-bottom: 10px;
     margin-right: 5px;
+    
    
   }
   
@@ -26,7 +29,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    background-color: #f3efef;
+    background-color: #f9f4f4;
+    
     
   }
   
